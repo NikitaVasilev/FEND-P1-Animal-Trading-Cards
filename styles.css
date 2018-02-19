@@ -28,6 +28,9 @@ img:hover {
 	/* Code of the background below founded on "https://webgradients.com/" */
 	background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
 	}
+#all-content:hover {
+	box-shadow: 10px 8px 42px 0px rgba(48, 50, 50, 0.51);
+}
 .description {
 	border: 1px solid green;
 	padding: 0px 16px;
