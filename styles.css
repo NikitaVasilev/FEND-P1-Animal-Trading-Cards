@@ -60,7 +60,7 @@ h3:hover {
 .big {
 	font-weight: bold;
 }
-/* I made this Image Hover Overlay by using a tutorial founded on "www.w3schools.com/howto/howto_css_image_overlay.asp" */
+/* I made this Image Hover Overlay from a tutorial founded on "www.w3schools.com/howto/howto_css_image_overlay.asp" */
 /* START OF IMAGE HOVER OVERLAY */
 .container {
   	position: relative;
@@ -105,9 +105,7 @@ a:hover {
 }
 body {
 	/* Code of the background below founded on "uigradients.com/" */
-	background: #D66D75;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #E29587, #D66D75);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #E29587, #D66D75); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(to bottom, rgba(140,122,122,1) 0%, rgba(175,135,124,1) 65%, rgba(175,135,124,1) 100%) fixed;
 }
 footer { 
     display: block;
