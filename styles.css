@@ -1,66 +1,96 @@
 /* Coded by NIKITA VASILEV for Udacity Front-End Web Developer Nanodegree */
 /* Project 1: Animal Trading Cards */
 
-img {
-	border-radius: 5px;
-	width: 300px;
-	margin-bottom: 10px;
-	opacity: 0.8;
-	box-shadow: 5px 4px 21px 0px rgba(48, 50, 50, 0.51);	
+html, body {
+  height: 100%;
 }
-img:hover {
+body {
+	display: flex;
+  	align-items: center;
+  	/* Code of the background below founded on "uigradients.com/" */
+	background: linear-gradient(to bottom, rgba(140,122,122,1) 0%, rgba(175,135,124,1) 65%, rgba(175,135,124,1) 100%) fixed;
+}
+#all-content, #all-content-two {
+	margin: 50px;
+}
+footer { 
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    position: absolute;
+  	right: 0;
+  	bottom: 0;
+  	left: 20px;
+}
+.explanation {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	width: 30%;
+	text-align: center;
+}
+
+
+ /* FIRST TRADING CARD */
+
+
+.image-one {
+	width: 300px;
+	margin-bottom: 0;
+	opacity: 1;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+}
+.image-one:hover {
 	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
 .fun-fact {
 	font-style: italic;
 }
-
 #all-content {
-	margin: 0 auto;
-	border: 1px solid transparent;
-	padding: 0px 16px 16px 16px;
+	margin: auto;
 	width: 300px;
 	border-radius: 15px;
 	box-shadow: 5px 4px 21px 0px rgba(48, 50, 50, 0.51);
 	/*Box shadow to display on older versions by using webkit prefix and moz prefix for firefox browsers */
 	-webkit-box-shadow: 5px 4px 21px 0px rgba(48, 50, 50, 0.51);
 	-moz-box-shadow:    5px 4px 21px 0px rgba(48, 50, 50, 0.51);
-	background-color: #F9C1A8;
+	background-color: white;
 	}
 #all-content:hover {
 	box-shadow: 10px 8px 42px 0px rgba(48, 50, 50, 0.51);
 }
 .description {
-	border: 1px solid transparent;
-	padding: 0px 10px;
-	border-radius: 5px;
+	padding: 0 10px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
+	color: grey;
 	/* Code of the background below founded on "webgradients.com/" */
-	background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
-	box-shadow: 5px 4px 21px 0px rgba(48, 50, 50, 0.51);
+	background-color: white;
+	width: 280px;
+	margin: 0;
 }
 ul {
 	list-style-type: none;
 	padding-left: 0px;
 }
-h3 {
+.heading-one {
 	font-family: 'Pacifico', cursive;
 	font-weight: bold;
 	font-size: 33px;
 	text-align: center;
-	margin: 10px 0 15px;
+	margin: 5px 0 5px;
 	color: #785551;
 }
-h3:hover {
-	color: #78415D;
+.heading-one:hover {
+	color: #F9C1A8;
 	transition: 0.5s;
 }
 .big {
 	font-weight: bold;
 }
-/* I made this Image Hover Overlay from a tutorial founded on "www.w3schools.com/howto/howto_css_image_overlay.asp" */
+/* I made this Image Hover Overlay by using a tutorial founded on "www.w3schools.com/howto/howto_css_image_overlay.asp" */
 /* START OF IMAGE HOVER OVERLAY */
 .container {
   	position: relative;
@@ -76,9 +106,9 @@ h3:hover {
   	transition: .5s ease;
   	/* Code of the background below founded on "webgradients.com/" */ 
   	background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
-  	border: 1px solid #785551;
-  	border-radius: 5px;
-  	margin-bottom: 14px;
+  	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+  	margin-bottom: 3px;
 }
 .container:hover .overlay {
   	opacity: 0.8;
@@ -92,23 +122,112 @@ h3:hover {
   	transform: translate(-50%, -50%);
   	-ms-transform: translate(-50%, -50%);
   	text-align: center;
+}
 /* END OF IMAGE HOVER OVERLAY*/
-}
-a:link {
+.bottom-link {
 	text-decoration: none;
+	color: white;
 }
-a {
+.top-link {
+	text-decoration: none;
 	color: black;
 }
 a:hover {
 	color: #785551;
 }
-body {
-	/* Code of the background below founded on "uigradients.com/" */
-	background: linear-gradient(to bottom, rgba(140,122,122,1) 0%, rgba(175,135,124,1) 65%, rgba(175,135,124,1) 100%) fixed;
+.bottom {
+	background-color: #F9C1A8;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	padding: 10px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: white;
 }
-footer { 
-    display: block;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 10px;
+
+
+/* CARD NUMBER TWO */
+
+
+.image-two {
+	border-radius: 5px;
+	width: 300px;
+	margin-bottom: 10px;
+	opacity: 0.8;
+	box-shadow: 5px 4px 21px 0px rgba(48, 50, 50, 0.51);	
 }
+.image-two:hover {
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+#all-content-two {
+	margin: 0 auto;
+	border: 1px solid transparent;
+	padding: 0px 16px 16px 16px;
+	width: 300px;
+	border-radius: 15px;
+	box-shadow: 5px 4px 21px 0px rgba(48, 50, 50, 0.51);
+	/*Box shadow to display on older versions by using webkit prefix and moz prefix for firefox browsers */
+	-webkit-box-shadow: 5px 4px 21px 0px rgba(48, 50, 50, 0.51);
+	-moz-box-shadow:    5px 4px 21px 0px rgba(48, 50, 50, 0.51);
+	background-color: #F9C1A8;
+	}
+#all-content-two:hover {
+	box-shadow: 10px 8px 42px 0px rgba(48, 50, 50, 0.51);
+}
+.description-two {
+	border: 1px solid transparent;
+	padding: 0px 10px;
+	border-radius: 5px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	/* Code of the background below founded on "webgradients.com/" */
+	background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+	box-shadow: 5px 4px 21px 0px rgba(48, 50, 50, 0.51);
+}
+.heading-two {
+	font-family: 'Pacifico', cursive;
+	font-weight: bold;
+	font-size: 33px;
+	text-align: center;
+	margin: 10px 0 15px;
+	color: #785551;
+}
+.heading-two:hover {
+	color: #78415D;
+	transition: 0.5s;
+}
+
+/* START OF IMAGE HOVER OVERLAY */
+.container-two {
+  	position: relative;
+  	width: 100%;
+}.overlay-two {
+  	position: absolute;
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	width: 100%;
+  	opacity: 0;
+  	transition: .5s ease;
+  	/* Code of the background below founded on "webgradients.com/" */ 
+  	background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+  	border: 1px solid #785551;
+  	border-radius: 5px;
+  	margin-bottom: 14px;
+}
+.container-two:hover .overlay-two {
+  	opacity: 0.8;
+}
+.text-two {
+  	font-size: 16px;
+  	font-family: 'Open Sans', sans-serif;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	-ms-transform: translate(-50%, -50%);
+  	text-align: center;
+}
+/* END OF IMAGE HOVER OVERLAY*/
