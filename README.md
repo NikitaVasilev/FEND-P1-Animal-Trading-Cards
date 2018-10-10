@@ -10,4 +10,4 @@ Actually I made two of them in one single file. The card at the right is the one
 [CLICK HERE TO SEE IT LIVE](https://nikitavasilev.github.io/fend-animal-trading-cards/)
 
 Screenshot of the project:
-![Screenshot of Project Animal Trading Cards](img/screenshot.img)
+![Screenshot of Project Animal Trading Cards](img/screenshot.jpg)
